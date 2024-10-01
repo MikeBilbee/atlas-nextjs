@@ -1,7 +1,8 @@
+import { addTopic } from "@/lib/actions";
 import Link from "next/link";
 export default function CreateTopicForm() {
   return (
-    <form>
+    <form action={addTopic}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         <div className="mb-4">
           <label htmlFor="title" className="mb-2 block text-sm font-medium">
